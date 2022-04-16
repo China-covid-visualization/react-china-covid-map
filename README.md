@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+**You may need to change the CORS policy in both development and deployment modes**.
+
 In the project directory, you can run:
 
 ### `npm start`
