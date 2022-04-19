@@ -2,6 +2,7 @@
   "name": "react-china-covid-map",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
