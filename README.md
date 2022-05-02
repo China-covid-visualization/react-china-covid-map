@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-**You may need to change the CORS policy in both development and deployment modes**.
+## **You may need to change the CORS policy in both development and deployment modes**.
+
+In debug mode, you can use a [browser extension](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino) to enable CORS.
 
 In the project directory, you can run:
 
