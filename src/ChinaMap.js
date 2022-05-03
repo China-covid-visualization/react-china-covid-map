@@ -97,7 +97,7 @@ class ChinaMap extends Component {
         }).catch(err => {
         });
 
-        const api = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
+        const api = "https://api.inews.qq.com/newsqa/v1/query/inner/publish/modules/list?modules=statisGradeCityDetail,diseaseh5Shelf";
         axios.get(api, {
             withCredentials: false,
              headers: {
@@ -106,9 +106,7 @@ class ChinaMap extends Component {
         }).then((res) => {
             if (res.status === 200) {
                 console.log('get data');
-                let content = res.data.data || "";
-                content = JSON.parse(content);
-                let stats = content.areaTree[0].children;
+                let stats = res.data.data.diseaseh5Shelf.areaTree[0].children || [];
                 this.setState({ data: stats });
                 let newData = [];
                 for (let i = 0; i < stats.length; i++) {
